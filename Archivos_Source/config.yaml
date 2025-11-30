@@ -1,0 +1,16 @@
+input:
+  source: 0  # 0 para cámara, o ruta de archivo
+
+output:
+  path: "./output/resultado_iot.mp4"
+
+model:
+  path: "./models/effdet.tflite"
+  labels: "./models/labels.txt"
+  score: 0.45
+
+app:
+  # Configuración IOT
+  thingspeak_enabled: true
+  thingspeak_key: "WIN7KBSFUFPWZF2N"  # Key de ThingSpeak
+  thingspeak_interval: 15  # Segundos entre subidas (ThingSpeak gratuito requiere >15s)
