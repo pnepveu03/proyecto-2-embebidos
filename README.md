@@ -296,7 +296,14 @@ graph TB
 ```
 ---
 
-## Casos de Uso
+## Thingspeak
+
+La plataforma ThingSpeak recibe en tiempo real los datos enviados por el sistema embebido. Cada detección procesada por el modelo se publica como un valor numérico que luego se visualiza en forma de gráficos históricos. Esto permite verificar que la comunicación IoT funciona correctamente, monitorear el comportamiento del sistema a lo largo del tiempo y validar que las detecciones generadas en el dispositivo llegan de forma confiable a la nube.
+
+![ThingSpeak Dashboard](Figuras/thingspeak.jpeg)
+
+
+## Posibles casos de uso
 
 ### 1. Monitoreo de Tráfico Urbano
 
